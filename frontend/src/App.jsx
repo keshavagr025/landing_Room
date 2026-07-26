@@ -6,8 +6,20 @@ function App() {
     <>
       <Navbar />
       <main className="app-main">
-        <h1>Welcome to Landing Room</h1>
-        <p>Build your landing page quickly and easily.</p>
+        <div class='welcome'>
+          Welcome to AttendyClass
+        </div>
+      <br />
+        <h1>AI Powered Attendance System</h1>
+        <br />
+       <p>Revolutionizing the classroom with next-gen computer vision and voice biometrics. Trusted by educators for
+            speed, accuracy, and security.</p>
+
+            <div className='btn'>
+              <button><a href="">Start AI Attendance</a></button>
+              <br />
+              <button>Explore Journey</button>
+            </div>
       </main>
     </>
   )
