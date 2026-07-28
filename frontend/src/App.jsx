@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar.jsx'
 import './App.css'
+import { Inovation } from './components/Inovation.jsx'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
               <button>Explore Journey</button>
             </div>
       </main>
+
+      <Inovation/>
     </>
   )
 }
