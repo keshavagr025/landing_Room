@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 50px 0;
+    overflow-x: auto;
 }
 
 .feature-card {

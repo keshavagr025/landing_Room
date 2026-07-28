@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card'
+import './Inovation.css'
 
 export const Inovation = () => {
     return (
-        <div className='heading'>
-            <h1>Innvovation Features</h1>
+        <section id="features" className="heading">
+            <h1>Innovation Features</h1>
             <div className="card-container">
                 <Card className="feature-card">
                     <Card.Body>
@@ -52,7 +52,7 @@ export const Inovation = () => {
                     </Card.Body>
                 </Card>
             </div>
-        </div>
+        </section>
 
     )
 }
