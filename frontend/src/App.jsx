@@ -3,6 +3,7 @@ import './App.css'
 import { Inovation } from './components/Inovation.jsx'
 import { Hero } from './components/Hero.jsx'
 import { TeacherJourney } from './components/TeacherJourney.jsx'
+import { TechStack } from './components/TechStack.jsx'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <Inovation />
       <TeacherJourney/>
+      <TechStack/>
     </>
   )
 }
