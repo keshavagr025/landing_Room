@@ -4,6 +4,7 @@ import { Inovation } from './components/Inovation.jsx'
 import { Hero } from './components/Hero.jsx'
 import { TeacherJourney } from './components/TeacherJourney.jsx'
 import { TechStack } from './components/TechStack.jsx'
+import { Student } from './components/Student.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Inovation />
       <TeacherJourney/>
       <TechStack/>
+      <Student/>
     </>
   )
 }
