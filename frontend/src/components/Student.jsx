@@ -1,44 +1,32 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-// import './TeacherJourney.css'
+import './Student.css'
 
 const journeySteps = [
   {
     number: '1',
-    title: 'Teacher Login',
-    text: 'Teachers sign in securely to access their personal classroom dashboard and teaching tools.',
-    image: '/src/assets/step-login.png',
+    title: 'Student Login',
+    text: 'Sign in to access classroom resources, schedules, and attendance details.',
+    visual: '🧑‍🎓',
   },
   {
     number: '2',
-    title: 'Teacher Dashboard',
-    text: 'From the dashboard, they monitor classes, attendance, announcements and student progress.',
-    image: '/src/assets/step-dashboard.png',
+    title: 'Join Lesson',
+    text: 'Join class sessions and stay connected with assignments and teacher notes.',
+    visual: '🏫',
   },
   {
     number: '3',
-    title: 'Course Management',
-    text: 'Creating new subjects and managing curriculum with AI-assisted tools.',
-    image: '/src/assets/step-course-management.png',
+    title: 'Automatic Attendance',
+    text: 'Attendance is captured using secure AI-powered face or voice recognition.',
+    visual: '📡',
   },
   {
     number: '4',
-    title: 'Face AI Recognition System',
-    text: 'Students can get attendance using face screening powered by AI.',
-    image: '/src/assets/step-face-ai.png',
+    title: 'Progress Review',
+    text: 'View attendance history and performance feedback in your dashboard.',
+    visual: '📈',
   },
-  {
-    number: '5',
-    title: 'Voice Recognition System',
-    text: 'Students can get attendance with voice recording and AI verification.',
-    image: '/src/assets/step-voice-ai.png',
-  },
-  {
-    number: '6',
-    title: 'Attendance Record System',
-    text: 'View attendance records and analytics stored securely with Supabase.',
-    image: '/src/assets/step-attendance-record.png',
-  }
 ]
 
 const studentCards = [
@@ -71,11 +59,11 @@ const studentCards = [
 
 export const Student = () => {
   return (
-    <section className='Student-journey-section'>
-      <div className='Student-journey-header'>
+    <section className='student-journey-section'>
+      <div className='student-journey-header'>
         <h1>The Student&apos;s Journey</h1>
         <p>
-          A clean two-column flow: the left side explains the login and dashboard steps, and the right side highlights the teacher-facing cards.
+          Students move from login to class participation, then attendance tracking and progress review.
         </p>
       </div>
 
@@ -88,9 +76,9 @@ export const Student = () => {
                 <h2>{step.title}</h2>
               </div>
               <p>{step.text}</p>
-              {step.image && (
-                <div className='step-image-wrapper'>
-                  <img src={step.image} alt={step.title} className='step-image' />
+              {step.visual && (
+                <div className='step-visual-wrapper'>
+                  <div className='step-visual'>{step.visual}</div>
                 </div>
               )}
             </div>

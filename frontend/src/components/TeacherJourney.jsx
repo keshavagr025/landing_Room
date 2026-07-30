@@ -6,71 +6,60 @@ const journeySteps = [
   {
     number: '1',
     title: 'Teacher Login',
-    text: 'Teachers sign in securely to access their personal classroom dashboard and teaching tools.',
-    image: '/src/assets/step-login.png',
+    text: 'Log in to access your personalized classroom tools and attendance dashboard.',
+    visual: '🧑‍🏫',
   },
   {
     number: '2',
-    title: 'Teacher Dashboard',
-    text: 'From the dashboard, they monitor classes, attendance, announcements and student progress.',
-    image: '/src/assets/step-dashboard.png',
+    title: 'Dashboard Access',
+    text: 'Open the teacher dashboard to manage lessons, attendance, and student progress.',
+    visual: '📊',
   },
   {
     number: '3',
-    title: 'Course Management',
-    text: 'Creating new subjects and managing curriculum with AI-assisted tools.',
-    image: '/src/assets/step-course-management.png',
+    title: 'Course Setup',
+    text: 'Create lessons, assign subjects, and organize materials for each class.',
+    visual: '📚',
   },
   {
     number: '4',
-    title: 'Face AI Recognition System',
-    text: 'Students can get attendance using face screening powered by AI.',
-    image: '/src/assets/step-face-ai.png',
+    title: 'AI Attendance',
+    text: 'Use face and voice recognition to record attendance automatically and securely.',
+    visual: '🤖',
   },
   {
     number: '5',
-    title: 'Voice Recognition System',
-    text: 'Students can get attendance with voice recording and AI verification.',
-    image: '/src/assets/step-voice-ai.png',
+    title: 'Review Records',
+    text: 'Check attendance history and analytics to support student follow-up.',
+    visual: '🗂️',
   },
-  {
-    number: '6',
-    title: 'Attendance Record System',
-    text: 'View attendance records and analytics stored securely with Supabase.',
-    image: '/src/assets/step-attendance-record.png',
-  }
 ]
 
 const teacherCards = [
   {
     icon: '👩‍🏫',
     title: 'Class Overview',
-    text: 'See the full class roster, upcoming lessons, and live attendance status in one place.',
+    text: 'See the full class roster, lesson plans, and real-time session details in one view.',
   },
   {
     icon: '📊',
     title: 'Attendance Insights',
-    text: 'Track daily attendance trends and easily identify students who need follow-up.',
+    text: 'Track attendance trends and quickly identify students needing extra support.',
   },
   {
-    icon: '💬',
+    icon: '🔔',
     title: 'Announcements',
-    text: 'Publish quick messages to students and parents directly from your dashboard.',
+    text: 'Share class updates, reminders, and alerts with students and parents instantly.',
   },
   {
-    icon: '💬',
-    title: 'Announcements',
-    text: 'Publish quick messages to students and parents directly from your dashboard.',
+    icon: '📁',
+    title: 'Course Materials',
+    text: 'Upload and organize teaching resources directly from the dashboard.',
   },
   {
-    icon: '💬',
-    title: 'Announcements',
-    text: 'Publish quick messages to students and parents directly from your dashboard.',
-  },
-   {
-    icon: '💬',
-    title: 'Announcements',
-    text: 'Publish quick messages to students and parents directly from your dashboard.',
+    icon: '🧠',
+    title: 'AI Attendance',
+    text: 'Use face and voice AI systems to automate attendance and reduce manual work.',
   },
 ]
 
@@ -93,9 +82,9 @@ export const TeacherJourney = () => {
                 <h2>{step.title}</h2>
               </div>
               <p>{step.text}</p>
-              {step.image && (
-                <div className='step-image-wrapper'>
-                  <img src={step.image} alt={step.title} className='step-image' />
+              {step.visual && (
+                <div className='step-visual-wrapper'>
+                  <div className='step-visual'>{step.visual}</div>
                 </div>
               )}
             </div>
