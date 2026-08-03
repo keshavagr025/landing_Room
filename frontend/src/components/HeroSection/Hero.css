@@ -278,4 +278,36 @@
   top: 0;
   left: 0;
   animation: scan 3s linear infinite;
+  z-index: 10;
+}
+
+/* 3D Coordinate Face Mesh Styles */
+.face-mesh-svg {
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.mesh-line {
+  stroke: rgba(16, 185, 129, 0.4);
+  stroke-width: 0.5;
+  fill: none;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw-mesh 3s ease-in-out infinite alternate;
+}
+
+.mesh-node {
+  fill: rgba(16, 185, 129, 0.2);
+  animation: flash-node 2s infinite alternate;
+}
+
+@keyframes draw-mesh {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flash-node {
+  0%, 100% { opacity: 0.3; r: 1.5; }
+  50% { opacity: 1; r: 3; fill: #34d399; filter: drop-shadow(0 0 4px #34d399); }
 }
