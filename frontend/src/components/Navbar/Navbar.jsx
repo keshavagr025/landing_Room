@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import { HiAcademicCap } from "react-icons/hi2";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +18,7 @@ export const Navbar = () => {
     <nav className={`landing-navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-brand">
-          <span style={{ fontSize: '1.8rem' }}>🎓</span>
+          <HiAcademicCap />
           <span className="gradient-text" style={{ fontWeight: '700' }}>Attendy</span>
         </div>
         <div className="nav-links">
