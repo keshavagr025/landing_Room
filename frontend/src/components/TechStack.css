@@ -1,67 +1,180 @@
-.techstack {
-  padding: 60px 24px;
-  max-width: 1120px;
+.techstack-section {
+  padding: 8rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.techstack-container {
+  max-width: 900px;
   margin: 0 auto;
-  text-align: left;
+  position: relative;
 }
 
-.techstack-header {
-  margin-bottom: 36px;
+.section-header {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
-.techstack-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
+.section-header h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.techstack-header p {
-  max-width: 640px;
-  color: #5f5f72;
-  line-height: 1.75;
+.section-subtitle {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-.techcards {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+.timeline-container {
+  position: relative;
+  padding-left: 2rem;
 }
 
-.tech-card {
-  border-radius: 24px;
-  border: 1px solid #e8e8e8;
-  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.timeline-line {
+  position: absolute;
+  left: 27px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.5) 10%, rgba(168, 85, 247, 0.5) 90%, transparent 100%);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  z-index: 1;
 }
 
-.tech-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 38px rgba(16, 24, 40, 0.12);
+.timeline-item {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
-.tech-icon {
-  width: 56px;
-  height: 56px;
-  display: grid;
-  place-items: center;
-  border-radius: 18px;
-  background: #eef2ff;
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background: var(--text-light);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(15, 23, 42, 1), 0 0 0 6px rgba(99, 102, 241, 0.5);
+  transition: all 0.3s ease;
+}
+
+.timeline-dot-glow {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: var(--primary);
+  border-radius: 50%;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--primary);
+  box-shadow: 0 0 0 4px rgba(15, 23, 42, 1), 0 0 0 8px rgba(99, 102, 241, 0.8);
+}
+
+.timeline-item:hover .timeline-dot-glow {
+  opacity: 0.6;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 2.5rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateX(8px);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  line-height: 1;
+  font-family: monospace;
+}
+
+.timeline-item:hover .step-number {
+  color: rgba(99, 102, 241, 0.1);
+  text-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.step-header h3 {
   font-size: 1.75rem;
-  margin-bottom: 18px;
+  color: var(--text-light);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-.tech-card .card-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
-.tech-card .card-text {
-  color: #5f5f72;
-  line-height: 1.75;
+.tech-tag {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.timeline-content p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 768px) {
-  .techcards {
-    grid-template-columns: 1fr;
+  .timeline-container {
+    padding-left: 0;
+  }
+  .timeline-line {
+    left: 2rem;
+  }
+  .timeline-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .timeline-dot-container {
+    padding-left: 1.25rem;
+    padding-top: 0;
+  }
+  .timeline-dot-glow {
+    top: 0;
+    left: 2rem;
   }
 }

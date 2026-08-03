@@ -3,19 +3,22 @@ import { Navbar } from './components/Navbar/Navbar';
 import { HeroSection } from './components/HeroSection/HeroSection';
 import { FeaturesSection } from './components/FeaturesSection/FeaturesSection';
 import { LiveDemoSection } from './components/LiveDemoSection/LiveDemoSection';
+import { TechStack } from './components/TechStack';
 
 function App() {
   return (
     <>
       <Navbar />
-      
+
       <main>
         <HeroSection />
-        
+
         <FeaturesSection />
-        
+
         <LiveDemoSection />
-        
+
+        <TechStack />
+
         {/* Simple Call to Action Section */}
         <section style={{ padding: '6rem 2rem', textAlign: 'center' }}>
           <div className="glass-panel" style={{ maxWidth: '800px', margin: '0 auto', background: 'rgba(99, 102, 241, 0.1)' }}>
@@ -23,7 +26,7 @@ function App() {
               Ready to Upgrade Your Classroom?
             </h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', marginBottom: '2rem' }}>
-              Join thousands of educators who have eliminated manual attendance. 
+              Join thousands of educators who have eliminated manual attendance.
               Setup takes less than 5 minutes.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>

@@ -24,7 +24,7 @@ export const Navbar = () => {
         <div className="nav-links">
           <a href="#features">Features</a>
           <a href="#demo">Live Demo</a>
-          <a href="#tech">Technology</a>
+          <a href="#tech-stack">Technology</a>
         </div>
         <div className="nav-actions">
           <button className="btn-secondary">Login</button>

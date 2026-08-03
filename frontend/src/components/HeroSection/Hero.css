@@ -40,9 +40,17 @@
 }
 
 @keyframes pulse-dot {
-  0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
 }
 
 .hero-title {
@@ -168,7 +176,7 @@
   gap: 1rem;
   transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
   transition: transform 0.5s ease;
-  box-shadow: -20px 20px 60px rgba(0,0,0,0.5), inset 0 0 0 1px var(--glass-border);
+  box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.5), inset 0 0 0 1px var(--glass-border);
 }
 
 .abstract-dashboard:hover {
@@ -193,14 +201,22 @@
   background: #475569;
 }
 
-.abstract-header .dots span:nth-child(1) { background: #ef4444; }
-.abstract-header .dots span:nth-child(2) { background: #f59e0b; }
-.abstract-header .dots span:nth-child(3) { background: #10b981; }
+.abstract-header .dots span:nth-child(1) {
+  background: #ef4444;
+}
+
+.abstract-header .dots span:nth-child(2) {
+  background: #f59e0b;
+}
+
+.abstract-header .dots span:nth-child(3) {
+  background: #10b981;
+}
 
 .search-bar {
   width: 150px;
   height: 20px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 4px;
 }
 
@@ -212,7 +228,7 @@
 
 .abstract-sidebar {
   width: 60px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 8px;
 }
 
@@ -224,7 +240,7 @@
 }
 
 .abstract-card {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -308,6 +324,17 @@
 }
 
 @keyframes flash-node {
-  0%, 100% { opacity: 0.3; r: 1.5; }
-  50% { opacity: 1; r: 3; fill: #34d399; filter: drop-shadow(0 0 4px #34d399); }
+
+  0%,
+  100% {
+    opacity: 0.3;
+    r: 1.5;
+  }
+
+  50% {
+    opacity: 1;
+    r: 3;
+    fill: #34d399;
+    filter: drop-shadow(0 0 4px #34d399);
+  }
 }
