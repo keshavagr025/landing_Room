@@ -14,7 +14,7 @@ export const StudentDashboard = ({ onLogout }) => {
     ]);
     
     // Check local storage for biometrics (simulated)
-    const stored = localStorage.getItem('attendy_biometrics');
+    const stored = localStorage.getItem('SayCheese.ai_biometrics');
     if (stored) {
       setBiometricSetup(JSON.parse(stored));
     }
@@ -35,7 +35,7 @@ export const StudentDashboard = ({ onLogout }) => {
   const handleCompleteSetup = (type) => {
     const newSetup = { ...biometricSetup, [type]: true };
     setBiometricSetup(newSetup);
-    localStorage.setItem('attendy_biometrics', JSON.stringify(newSetup));
+    localStorage.setItem('SayCheese.ai_biometrics', JSON.stringify(newSetup));
     setShowSetup(null);
   };
 

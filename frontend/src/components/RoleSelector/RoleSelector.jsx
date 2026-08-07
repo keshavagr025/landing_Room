@@ -3,7 +3,7 @@ import React from 'react';
 export const RoleSelector = ({ onSelectRole }) => {
   return (
     <div className="glass-panel animate-fade-in" style={{ maxWidth: '600px', margin: '4rem auto', textAlign: 'center' }}>
-      <h1 className="gradient-text" style={{ marginBottom: '1rem' }}>Welcome to Attendy</h1>
+      <h1 className="gradient-text" style={{ marginBottom: '1rem' }}>Welcome to SayCheese.ai</h1>
       <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
         AI-Powered Attendance Management for College. Select your portal to continue.
       </p>

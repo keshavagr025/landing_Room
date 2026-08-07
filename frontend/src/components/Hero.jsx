@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
      <main id="home" className="app-main">
         <div className="welcome">
-          Welcome to AttendyClass
+          Welcome to SayCheese.aiClass
         </div>
         <h1>AI Powered Attendance System</h1>
         <p>Revolutionizing the classroom with next-gen computer vision and voice biometrics. Trusted by educators for

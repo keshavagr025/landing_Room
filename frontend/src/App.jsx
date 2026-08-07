@@ -39,7 +39,7 @@ function App() {
       </main>
 
       <footer style={{ padding: '3rem 2rem', borderTop: '1px solid var(--glass-border)', textAlign: 'center', color: 'var(--text-muted)', marginTop: '4rem' }}>
-        <p>&copy; {new Date().getFullYear()} Attendy: AI-Powered Attendance. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} SayCheese.ai: AI-Powered Attendance. All rights reserved.</p>
         <div style={{ marginTop: '1rem', display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
           <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Privacy Policy</a>
           <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Terms of Service</a>

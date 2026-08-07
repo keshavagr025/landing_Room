@@ -38,7 +38,7 @@ export const FeaturesSection = () => {
         <h2 className="gradient-text">Built for Modern Education</h2>
         <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>
           Whether you're managing a 500-student lecture hall or attending a specialized seminar,
-          Attendy provides the tools you need.
+          SayCheese.ai provides the tools you need.
         </p>
       </div>
 

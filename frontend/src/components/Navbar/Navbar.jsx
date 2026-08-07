@@ -19,7 +19,7 @@ export const Navbar = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <HiAcademicCap />
-          <span className="gradient-text" style={{ fontWeight: '700' }}>Attendy</span>
+          <span className="gradient-text" style={{ fontWeight: '700' }}>SayCheese.ai</span>
         </div>
         <div className="nav-links">
           <a href="#features">Features</a>

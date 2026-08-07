@@ -71,7 +71,7 @@ export const HeroSection = () => {
         </h1>
         
         <p className="hero-subtitle animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          Eliminate manual roll-calls and buddy punching. Attendy uses advanced Facial Recognition and Voice Biometrics backed by high-accuracy ML pipelines to make attendance invisible and secure.
+          Eliminate manual roll-calls and buddy punching. SayCheese.ai uses advanced Facial Recognition and Voice Biometrics backed by high-accuracy ML pipelines to make attendance invisible and secure.
         </p>
         
         <div className="hero-cta animate-fade-in" style={{ animationDelay: '0.4s' }}>
