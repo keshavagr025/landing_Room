@@ -148,5 +148,5 @@ python app.py
 ```
 
 <p align="center">
-  <img src="frontend/src/assets/SayCheese.ai_banner (1).svg" alt="SayCheese.ai Concept" width="80%" style="border-radius:10px;">
+  <img src="/frontend/src/assets/SayCheese.ai_banner (1).svg" alt="SayCheese.ai Concept" width="80%" style="border-radius:10px;">
 </p>
