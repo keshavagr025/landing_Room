@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="SayCheese.ai Banner" width="100%" />
+  <img src="frontend/src/assets/banner.png" alt="SayCheese.ai Banner" width="100%" />
 </p>
 
 <h1 align="center">SayCheese.ai: AI-Powered Attendance Management for College </h1>
@@ -37,7 +37,7 @@
 ## 🏗 Architecture & Flow
 
 <p align="center">
-  <img src="assets/concept.png" alt="SayCheese.ai Concept" width="80%" style="border-radius:10px;">
+  <img src="frontend/src/assets/concept.png" alt="SayCheese.ai Concept" width="80%" style="border-radius:10px;">
 </p>
 
 ### System Architecture
@@ -148,5 +148,5 @@ python app.py
 ```
 
 <p align="center">
-  <img src="assets/SayCheese.ai_banner.svg" alt="SayCheese.ai Concept" width="80%" style="border-radius:10px;">
+  <img src="frontend/src/assets/SayCheese.ai_banner (1).svg" alt="SayCheese.ai Concept" width="80%" style="border-radius:10px;">
 </p>
